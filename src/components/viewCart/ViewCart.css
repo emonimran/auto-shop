@@ -1,0 +1,44 @@
+.cart-header {
+  background-image: url("../assets/images/view-cart-top.jpg");
+  background-repeat: no-repeat;
+  background-position: 40% 50%;
+  height: 300px !important;
+  width: 100%;
+}
+.cart-navigation {
+  display: table-cell;
+  vertical-align: middle;
+  height: 300px !important;
+}
+
+.home-cart-link:hover {
+  color: #ff4545;
+}
+
+.table-container {
+  overflow-x: scroll;
+}
+
+.table-container::-webkit-scrollbar {
+  display: none;
+}
+
+.table-heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.coupon-input {
+  height: 35px;
+  margin-left: 20px;
+}
+
+.final-calc button {
+  font-size: 15px;
+  padding: 8px 20px;
+}
+
+.total-payable {
+  font-size: 15px;
+  margin-right: 40px;
+}

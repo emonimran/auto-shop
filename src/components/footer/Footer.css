@@ -1,0 +1,45 @@
+.footer-div {
+  position: relative;
+  background-image: url(../assets/images/car-tire.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-top: 30px !important;
+}
+
+.footer-div::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+footer h6 {
+  font-size: 20px;
+}
+
+footer a,
+footer p {
+  font-size: 15px;
+}
+
+.footer-contents {
+  position: relative;
+  color: white;
+}
+
+.footer-contents a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-icons {
+  color: #dc3545;
+}
+
+.media-icon-btn {
+  padding: 10px 15px;
+}

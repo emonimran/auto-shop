@@ -1,0 +1,20 @@
+.product-slider-section {
+  background: url(../../images/row-03.png);
+  background-repeat: no-repeat;
+}
+
+.swiper-slide {
+  width: 232.2px !important;
+  padding: 10px !important;
+  margin-right: 20px !important;
+}
+.swiper-slide:hover {
+  border: 1px solid none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.swiper-slide:first-child {
+  margin-left: 10px;
+}

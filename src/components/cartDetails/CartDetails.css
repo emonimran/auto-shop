@@ -1,0 +1,18 @@
+.remove-btn {
+  font-size: 20px;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.table-content {
+  font-size: 15px;
+}
+
+.arrow-right,
+.arrow-left {
+  padding: 5px !important;
+  margin: 5px;
+}

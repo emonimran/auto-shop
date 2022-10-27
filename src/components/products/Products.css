@@ -1,0 +1,56 @@
+.card-button {
+  color: black;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+.card-icon-btn {
+  padding: 5px 20px;
+}
+
+.card-img-top {
+  padding: 10px;
+  padding-top: 20px;
+  position: relative;
+  width: 380px;
+  height: 270px;
+  object-fit: cover;
+  object-position: 50% 65%;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: gray !important;
+  font-weight: 400 !important;
+}
+.card-text span {
+  color: red;
+  font-weight: 700;
+}
+.cards-row {
+  display: flex;
+  flex: 1;
+}
+.card {
+  max-width: 388px;
+}
+
+.card:hover {
+  border: 1px solid none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  cursor: pointer;
+}
+
+.sale-tag {
+  position: absolute;
+  height: 25px;
+  width: 80px;
+  background-color: #4bc871;
+  top: 30px;
+  border: 1px solid #4bc871;
+  border-radius: 5px;
+  font-weight: 500;
+  color: white;
+}
