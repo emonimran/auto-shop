@@ -5,14 +5,19 @@ import { CartContext } from "../../App";
 
 export default function CartDetails({ pd }) {
   const [cart, setCart] = useContext(CartContext);
+
   const handleQuantityIncrement = () => {
     const existingProduct = cart.find((product) => product.id === pd.id);
     // console.log(existingProduct);
     const otherProducts = cart.filter((product) => product.id !== pd.id);
     console.log(otherProducts);
     if (existingProduct) {
-      pd.quantity += 1;
-      setCart([...otherProducts, existingProduct]);
+      const newItems = cart.map((item) =>
+        item.id === pd.id
+          ? { ...existingProduct, quantity: existingProduct.quantity + 1 }
+          : item
+      );
+      setCart(newItems);
     }
   };
   const handleQuantityDecrement = () => {
@@ -21,8 +26,12 @@ export default function CartDetails({ pd }) {
     const otherProducts = cart.filter((product) => product.id !== pd.id);
     console.log(otherProducts);
     if (existingProduct && pd.quantity > 1) {
-      pd.quantity -= 1;
-      setCart([...otherProducts, existingProduct]);
+      const newItems = cart.map((item) =>
+        item.id === pd.id
+          ? { ...existingProduct, quantity: existingProduct.quantity - 1 }
+          : item
+      );
+      setCart(newItems);
     } else if (existingProduct && pd.quantity === 1) {
       setCart([...otherProducts]);
     }
