@@ -12,7 +12,7 @@ import CartDropdown from "../cartDropdown/CartDropdown";
 import { Link } from "react-router-dom";
 
 function NavbarMain() {
-  const [cart, setCart] = useContext(CartContext);
+  const [cart] = useContext(CartContext);
 
   const cartCount = cart.reduce(
     (count, product) => count + product.quantity,
@@ -50,50 +50,103 @@ function NavbarMain() {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                <Dropdown.Item
+                  href="#/action-1"
+                  className="navbar-dropdown-item"
+                >
+                  Action
+                </Dropdown.Item>
                 <NavDropdown.Divider />
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                <Dropdown.Item
+                  href="#/action-2"
+                  className="navbar-dropdown-item"
+                >
+                  Another action
+                </Dropdown.Item>
                 <NavDropdown.Divider />
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <Dropdown.Item
+                  href="#/action-3"
+                  className="navbar-dropdown-item"
+                >
+                  Something else
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto home">
+            <Nav className="me-auto">
               <Nav.Link className="mx-4">
-                <Link to="/">Home</Link>
+                <Link to="/" className="home">
+                  Home
+                </Link>
               </Nav.Link>
 
               <NavDropdown title="Shop" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">
+                <NavDropdown.Item
+                  href="#action/3.1"
+                  className="navbar-dropdown-item"
+                >
                   Product Category
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item
+                  href="#action/3.2"
+                  className="navbar-dropdown-item"
+                >
                   Special Products
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item
+                  href="#action/3.3"
+                  className="navbar-dropdown-item"
+                >
                   Top Rated Product
                 </NavDropdown.Item>
               </NavDropdown>
 
               <NavDropdown title="Gallery" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item
+                  href="#action/3.1"
+                  className="navbar-dropdown-item"
+                >
+                  Action
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="#action/3.2"
+                  className="navbar-dropdown-item"
+                >
                   Another action
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item
+                  href="#action/3.3"
+                  className="navbar-dropdown-item"
+                >
                   Something
                 </NavDropdown.Item>
               </NavDropdown>
 
               <NavDropdown title="Pages" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">About Us</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item
+                  href="#action/3.1"
+                  className="navbar-dropdown-item"
+                >
+                  About Us
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="#action/3.2"
+                  className="navbar-dropdown-item"
+                >
                   Contact Us
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">F.A.Q</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item
+                  href="#action/3.3"
+                  className="navbar-dropdown-item"
+                >
+                  F.A.Q
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="#action/3.4"
+                  className="navbar-dropdown-item"
+                >
                   Terms and Conditions
                 </NavDropdown.Item>
               </NavDropdown>

@@ -12,6 +12,10 @@
   width: 200px;
 }
 
+.category-dropdown-header {
+  z-index: 10000;
+}
+
 .search-box {
   padding: 5px 0px 5px 50px;
   border: 1px solid rgb(196, 196, 196);
